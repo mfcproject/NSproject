@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F122EB81-910B-4D95-B8FD-1760CCC70C58}</ProjectGuid>
+    <RootNamespace>quan_MFC</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="quan_MFC.h" />
+    <ClInclude Include="quan_MFCDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="quan_MFC.cpp" />
+    <ClCompile Include="quan_MFCDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="quan_MFC.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\quan_MFC.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\关于产品正常状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\关于产品经过状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\关于产品选中状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\定位.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\宣传图.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\左手.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\微信图片_20180814223921.png" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\报表信息正常状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\报表信息经过状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\报表信息选中状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\未登录.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\游戏训练正常状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\游戏训练经过状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\游戏训练选中状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\用户信息正常状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\用户信息经过状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\用户信息选中状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\登录.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\背景.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\训练设置正常状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\训练设置经过状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\训练设置选中状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\设备已连接.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\设备未连接.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\评估系统正常状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\评估系统经过状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\评估系统选中状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\退出程序正常状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\退出程序经过状态.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\NSproject-master\res\MainView\退出程序选中状态.bmp" />
+    <Image Include="res\quan_MFC.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="quan_MFC.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
